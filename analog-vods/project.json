@@ -1,0 +1,57 @@
+{
+  "name": "analog-vods",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@analogjs/platform:vite",
+      "defaultConfiguration": "production",
+      "configurations": {
+        "development": {
+          "mode": "development"
+        },
+        "production": {
+          "sourcemap": false,
+          "mode": "production"
+        }
+      },
+      "outputs": [
+        "{options.outputPath}",
+        "{workspaceRoot}/dist/analog-vods/.nitro",
+        "{workspaceRoot}/dist/analog-vods/ssr",
+        "{workspaceRoot}/dist/analog-vods/analog"
+      ],
+      "options": {
+        "main": "analog-vods/src/main.ts",
+        "configFile": "analog-vods/vite.config.ts",
+        "outputPath": "dist/analog-vods/client",
+        "tsConfig": "analog-vods/tsconfig.app.json"
+      }
+    },
+    "serve": {
+      "executor": "@analogjs/platform:vite-dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "analog-vods:build",
+        "port": 4200
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "analog-vods:build:development",
+          "hmr": true
+        },
+        "production": {
+          "buildTarget": "analog-vods:build:production"
+        }
+      }
+    },
+    "test": {
+      "executor": "@analogjs/platform:vitest",
+      "outputs": [
+        "{projectRoot}/coverage"
+      ]
+    }
+  },
+  "tags": [],
+  "sourceRoot": "./analog-vods/src"
+}
