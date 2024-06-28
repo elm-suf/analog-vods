@@ -2,9 +2,14 @@
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "defaultProject": "analog-vods",
   "namedInputs": {
-    "default": ["{projectRoot}/**/*", "sharedGlobals"],
-    "production": ["default"],
+    "default": [
+      "{projectRoot}/**/*",
+      "sharedGlobals"
+    ],
+    "production": [
+      "default"
+    ],
     "sharedGlobals": []
   },
-  "nxCloudAccessToken": "NX_CLOUD_ACCESS_TOKEN"
+  "nxCloudAccessToken": "YWU1MDAzYjctNTNlZC00ZDI2LWE4NDAtOTNhNzcyOGQyZThmfHJlYWQtd3JpdGU="
 }
