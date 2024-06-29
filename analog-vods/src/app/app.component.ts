@@ -5,9 +5,9 @@ import { RouterOutlet } from "@angular/router";
   selector: "analog-vods-root",
   standalone: true,
   imports: [RouterOutlet],
-  template: ` <router-outlet></router-outlet> `,
+  template: ` <router-outlet /> `,
   host: {
-    class: "flex min-h-screen text-zinc-50 bg-slate-900",
+    class: "dark flex min-h-screen bg-background text-foreground antialiased",
   },
 })
 export class AppComponent {}
