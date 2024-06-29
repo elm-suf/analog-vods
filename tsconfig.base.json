@@ -26,6 +26,15 @@
       ],
       "@spartan-ng/ui-icon-helm": [
         "libs/ui/ui-icon-helm/src/index.ts"
+      ],
+      "@spartan-ng/ui-command-helm": [
+        "libs/ui/ui-command-helm/src/index.ts"
+      ],
+      "@spartan-ng/ui-avatar-helm": [
+        "libs/ui/ui-avatar-helm/src/index.ts"
+      ],
+      "@spartan-ng/ui-dialog-helm": [
+        "libs/ui/ui-dialog-helm/src/index.ts"
       ]
     }
   },

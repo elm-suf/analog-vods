@@ -4,7 +4,7 @@ import { lucideChevronRight } from '@ng-icons/lucide';
 import { HlmIconComponent } from '@spartan-ng/ui-icon-helm';
 
 @Component({
-  selector: 'app-icon',
+  selector: 'app-vods-icon',
   standalone: true,
   imports: [HlmIconComponent],
   providers: [provideIcons({ lucideChevronRight })],

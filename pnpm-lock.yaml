@@ -53,9 +53,24 @@ importers:
       '@ng-icons/lucide':
         specifier: ^28.1.0
         version: 28.1.0
+      '@ngneat/overview':
+        specifier: ^5.0.0
+        version: 5.1.1(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))
+      '@ngxpert/cmdk':
+        specifier: ^1.0.0
+        version: 1.0.0(@angular/common@18.0.5(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1)
+      '@spartan-ng/ui-avatar-brain':
+        specifier: 0.0.1-alpha.352
+        version: 0.0.1-alpha.352(@angular/common@18.0.5(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(clsx@1.2.1)
+      '@spartan-ng/ui-command-brain':
+        specifier: 0.0.1-alpha.352
+        version: 0.0.1-alpha.352(@angular/common@18.0.5(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(@ngneat/overview@5.1.1(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7)))(@ngneat/until-destroy@10.0.0(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@ngxpert/cmdk@1.0.0(@angular/common@18.0.5(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))
       '@spartan-ng/ui-core':
         specifier: 0.0.1-alpha.352
         version: 0.0.1-alpha.352(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(clsx@1.2.1)(rxjs@7.8.1)(tailwind-merge@2.3.0)(tailwindcss-animate@1.0.7(tailwindcss@3.4.4(ts-node@10.9.1(@swc/core@1.5.29(@swc/helpers@0.5.11))(@types/node@18.16.9)(typescript@5.4.5))))(tailwindcss@3.4.4(ts-node@10.9.1(@swc/core@1.5.29(@swc/helpers@0.5.11))(@types/node@18.16.9)(typescript@5.4.5)))
+      '@spartan-ng/ui-dialog-brain':
+        specifier: 0.0.1-alpha.352
+        version: 0.0.1-alpha.352(@angular/cdk@18.0.5(@angular/common@18.0.5(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(@spartan-ng/ui-core@0.0.1-alpha.352(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(clsx@1.2.1)(rxjs@7.8.1)(tailwind-merge@2.3.0)(tailwindcss-animate@1.0.7(tailwindcss@3.4.4(ts-node@10.9.1(@swc/core@1.5.29(@swc/helpers@0.5.11))(@types/node@18.16.9)(typescript@5.4.5))))(tailwindcss@3.4.4(ts-node@10.9.1(@swc/core@1.5.29(@swc/helpers@0.5.11))(@types/node@18.16.9)(typescript@5.4.5))))
       '@trpc/client':
         specifier: ^10.25.0
         version: 10.45.2(@trpc/server@10.45.2)
@@ -1900,6 +1915,17 @@ packages:
   '@ng-icons/lucide@28.1.0':
     resolution: {integrity: sha512-kNz0OwIQFJmEtJzGeKlYrtDmVCQdbdbwsLKGpNZZRLqgd5Qq31CszDhnJnBb1A7OZI+Wsd6PMh3iYyOFOSi1Gg==}
 
+  '@ngneat/overview@5.1.1':
+    resolution: {integrity: sha512-Dz7yylhS08Mo+A8SXo7KyJBJMxD18Oq/G5v/ndvd5C8Gi3uOrAiXUjxvqRCPMxrg03FlkvEsD5/4TvMKtrUfAQ==}
+    peerDependencies:
+      '@angular/core': '>=16'
+
+  '@ngneat/until-destroy@10.0.0':
+    resolution: {integrity: sha512-xXFAabQ4YVJ82LYxdgUlaKZyR3dSbxqG3woSyaclzxfCgWMEDweCcM/GGYbNiHJa0WwklI98RXHvca+UyCxpeg==}
+    peerDependencies:
+      '@angular/core': '>=13'
+      rxjs: ^6.4.0 || ^7.0.0
+
   '@ngtools/webpack@18.0.6':
     resolution: {integrity: sha512-chSRbPpnqTThURQqUvWAgEGkLcn5TQnUQPD1HBf4WcoO/OkaK4Q1Sa8FrEllkC6/Dlyj7myi8rskQz+V8K7GSg==}
     engines: {node: ^18.19.1 || ^20.11.1 || >=22.0.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
@@ -1907,6 +1933,12 @@ packages:
       '@angular/compiler-cli': ^18.0.0
       typescript: '>=5.4 <5.5'
       webpack: ^5.54.0
+
+  '@ngxpert/cmdk@1.0.0':
+    resolution: {integrity: sha512-PmZEKINJxWbGEE4GJ+iyB881z2YWETL1s8l2snqnmmVKCzTZjQruCY0JA8rLIAmLz6m9jlXUVj3Ox05i216tCQ==}
+    peerDependencies:
+      '@angular/common': '>=16.0.0'
+      '@angular/core': '>16.0.0'
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -2520,6 +2552,22 @@ packages:
     peerDependencies:
       tslib: ^2.3.0
 
+  '@spartan-ng/ui-avatar-brain@0.0.1-alpha.352':
+    resolution: {integrity: sha512-SBue5MPcqV1y8nmsdDGdPDQ7KfGE7ncZH71QfEPPvMKXyIHhndQesVdduPiyFE7I+Qsm38tCvK4R0r0B899aFw==}
+    peerDependencies:
+      '@angular/common': ^18.0.0
+      '@angular/core': ^18.0.0
+      clsx: ^1.2.1
+
+  '@spartan-ng/ui-command-brain@0.0.1-alpha.352':
+    resolution: {integrity: sha512-8JxaxweBjlLdwanpaCVVEmjYd8g6G8qRUnnqHPJUL3RG32I2gnfHX77Fwu8PsbPD2Fmm0Tk1FiwdDwKPfdcmFw==}
+    peerDependencies:
+      '@angular/common': ^18.0.0
+      '@angular/core': ^18.0.0
+      '@ngneat/overview': ^5.0.0
+      '@ngneat/until-destroy': ^10.0.0
+      '@ngxpert/cmdk': ^1.0.0
+
   '@spartan-ng/ui-core@0.0.1-alpha.352':
     resolution: {integrity: sha512-shsMlB89S6QgCjLZ7Q5pWlRAUIGIWG3z/fIdaRb4Drepi4Wuvd+R3DUp5KM0NlraHqbj5huETW/9Tm3IxuZhzA==}
     peerDependencies:
@@ -2529,6 +2577,13 @@ packages:
       tailwind-merge: ^2.2.0
       tailwindcss: ^3.0.2
       tailwindcss-animate: ^1.0.6
+
+  '@spartan-ng/ui-dialog-brain@0.0.1-alpha.352':
+    resolution: {integrity: sha512-nS8uitcb+N6B9ULszlQQgHkCVb3w2XAgB0ySPgaznzPVEryZnKpRMFKLzrTVkj32q0bo5C+LV1SgEvK8sZ/QrA==}
+    peerDependencies:
+      '@angular/cdk': ^18.0.0
+      '@angular/core': ^18.0.0
+      '@spartan-ng/ui-core': 0.0.1-alpha.352
 
   '@swc-node/core@1.13.1':
     resolution: {integrity: sha512-emB5l2nZsXjUEAuusqjYvWnQMLWZp6K039Mv8aq5SX1rsNM/N7DNhw1i4/DX7AyzNZ0tT+ASWyTvqEURldp5HA==}
@@ -10349,6 +10404,17 @@ snapshots:
     dependencies:
       tslib: 2.6.3
 
+  '@ngneat/overview@5.1.1(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))':
+    dependencies:
+      '@angular/core': 18.0.5(rxjs@7.8.1)(zone.js@0.14.7)
+      tslib: 2.6.3
+
+  '@ngneat/until-destroy@10.0.0(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1)':
+    dependencies:
+      '@angular/core': 18.0.5(rxjs@7.8.1)(zone.js@0.14.7)
+      rxjs: 7.8.1
+      tslib: 2.6.3
+
   '@ngtools/webpack@18.0.6(@angular/compiler-cli@18.0.5(@angular/compiler@18.0.5(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7)))(typescript@5.4.5))(typescript@5.4.5)(webpack@5.91.0(@swc/core@1.5.29(@swc/helpers@0.5.11))(esbuild@0.21.3))':
     dependencies:
       '@angular/compiler-cli': 18.0.5(@angular/compiler@18.0.5(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7)))(typescript@5.4.5)
@@ -10360,6 +10426,17 @@ snapshots:
       '@angular/compiler-cli': 18.0.5(@angular/compiler@18.0.5(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7)))(typescript@5.4.5)
       typescript: 5.4.5
       webpack: 5.92.1(@swc/core@1.5.29(@swc/helpers@0.5.11))
+
+  '@ngxpert/cmdk@1.0.0(@angular/common@18.0.5(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1)':
+    dependencies:
+      '@angular/cdk': 18.0.5(@angular/common@18.0.5(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1)
+      '@angular/common': 18.0.5(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1)
+      '@angular/core': 18.0.5(rxjs@7.8.1)(zone.js@0.14.7)
+      '@ngneat/overview': 5.1.1(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))
+      '@ngneat/until-destroy': 10.0.0(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1)
+      tslib: 2.6.3
+    transitivePeerDependencies:
+      - rxjs
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -11368,6 +11445,22 @@ snapshots:
       - vue-template-compiler
       - webpack-cli
 
+  '@spartan-ng/ui-avatar-brain@0.0.1-alpha.352(@angular/common@18.0.5(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(clsx@1.2.1)':
+    dependencies:
+      '@angular/common': 18.0.5(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1)
+      '@angular/core': 18.0.5(rxjs@7.8.1)(zone.js@0.14.7)
+      clsx: 1.2.1
+      tslib: 2.6.3
+
+  '@spartan-ng/ui-command-brain@0.0.1-alpha.352(@angular/common@18.0.5(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(@ngneat/overview@5.1.1(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7)))(@ngneat/until-destroy@10.0.0(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@ngxpert/cmdk@1.0.0(@angular/common@18.0.5(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))':
+    dependencies:
+      '@angular/common': 18.0.5(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1)
+      '@angular/core': 18.0.5(rxjs@7.8.1)(zone.js@0.14.7)
+      '@ngneat/overview': 5.1.1(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))
+      '@ngneat/until-destroy': 10.0.0(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1)
+      '@ngxpert/cmdk': 1.0.0(@angular/common@18.0.5(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1)
+      tslib: 2.6.3
+
   '@spartan-ng/ui-core@0.0.1-alpha.352(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(clsx@1.2.1)(rxjs@7.8.1)(tailwind-merge@2.3.0)(tailwindcss-animate@1.0.7(tailwindcss@3.4.4(ts-node@10.9.1(@swc/core@1.5.29(@swc/helpers@0.5.11))(@types/node@18.16.9)(typescript@5.4.5))))(tailwindcss@3.4.4(ts-node@10.9.1(@swc/core@1.5.29(@swc/helpers@0.5.11))(@types/node@18.16.9)(typescript@5.4.5)))':
     dependencies:
       '@angular/core': 18.0.5(rxjs@7.8.1)(zone.js@0.14.7)
@@ -11376,6 +11469,13 @@ snapshots:
       tailwind-merge: 2.3.0
       tailwindcss: 3.4.4(ts-node@10.9.1(@swc/core@1.5.29(@swc/helpers@0.5.11))(@types/node@18.16.9)(typescript@5.4.5))
       tailwindcss-animate: 1.0.7(tailwindcss@3.4.4(ts-node@10.9.1(@swc/core@1.5.29(@swc/helpers@0.5.11))(@types/node@18.16.9)(typescript@5.4.5)))
+      tslib: 2.6.3
+
+  '@spartan-ng/ui-dialog-brain@0.0.1-alpha.352(@angular/cdk@18.0.5(@angular/common@18.0.5(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(@spartan-ng/ui-core@0.0.1-alpha.352(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(clsx@1.2.1)(rxjs@7.8.1)(tailwind-merge@2.3.0)(tailwindcss-animate@1.0.7(tailwindcss@3.4.4(ts-node@10.9.1(@swc/core@1.5.29(@swc/helpers@0.5.11))(@types/node@18.16.9)(typescript@5.4.5))))(tailwindcss@3.4.4(ts-node@10.9.1(@swc/core@1.5.29(@swc/helpers@0.5.11))(@types/node@18.16.9)(typescript@5.4.5))))':
+    dependencies:
+      '@angular/cdk': 18.0.5(@angular/common@18.0.5(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1)
+      '@angular/core': 18.0.5(rxjs@7.8.1)(zone.js@0.14.7)
+      '@spartan-ng/ui-core': 0.0.1-alpha.352(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(clsx@1.2.1)(rxjs@7.8.1)(tailwind-merge@2.3.0)(tailwindcss-animate@1.0.7(tailwindcss@3.4.4(ts-node@10.9.1(@swc/core@1.5.29(@swc/helpers@0.5.11))(@types/node@18.16.9)(typescript@5.4.5))))(tailwindcss@3.4.4(ts-node@10.9.1(@swc/core@1.5.29(@swc/helpers@0.5.11))(@types/node@18.16.9)(typescript@5.4.5)))
       tslib: 2.6.3
 
   '@swc-node/core@1.13.1(@swc/core@1.5.29(@swc/helpers@0.5.11))(@swc/types@0.1.9)':

@@ -1,13 +1,13 @@
-import { Component } from "@angular/core";
-import { RouterOutlet } from "@angular/router";
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: "analog-vods-root",
+  selector: 'app-vods-root',
   standalone: true,
   imports: [RouterOutlet],
   template: ` <router-outlet /> `,
   host: {
-    class: "dark flex min-h-screen bg-background text-foreground antialiased",
+    class: 'text-foreground block antialiased',
   },
 })
 export class AppComponent {}
