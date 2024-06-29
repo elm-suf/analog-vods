@@ -47,6 +47,12 @@ importers:
       '@angular/router':
         specifier: ^18.0.0
         version: 18.0.5(@angular/common@18.0.5(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(@angular/platform-browser@18.0.5(@angular/animations@18.0.5(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7)))(@angular/common@18.0.5(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7)))(rxjs@7.8.1)
+      '@ng-icons/core':
+        specifier: ^25.1.0
+        version: 25.6.1
+      '@ng-icons/lucide':
+        specifier: ^28.1.0
+        version: 28.1.0
       '@spartan-ng/ui-core':
         specifier: 0.0.1-alpha.352
         version: 0.0.1-alpha.352(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7))(clsx@1.2.1)(rxjs@7.8.1)(tailwind-merge@2.3.0)(tailwindcss-animate@1.0.7(tailwindcss@3.4.4(ts-node@10.9.1(@swc/core@1.5.29(@swc/helpers@0.5.11))(@types/node@18.16.9)(typescript@5.4.5))))(tailwindcss@3.4.4(ts-node@10.9.1(@swc/core@1.5.29(@swc/helpers@0.5.11))(@types/node@18.16.9)(typescript@5.4.5)))
@@ -1887,6 +1893,12 @@ packages:
   '@netlify/serverless-functions-api@1.18.4':
     resolution: {integrity: sha512-5R0kOKrOqhlFFrA7oduzJS+LQRjnX2CX8kJaYI9PQKIpNvzF18n+LNGWTS42YxPfIpAE64yaHbppeAigms2QTw==}
     engines: {node: '>=18.0.0'}
+
+  '@ng-icons/core@25.6.1':
+    resolution: {integrity: sha512-o6vCttlzXvDZRYiOKOULr7fsX8gY/DwwxzBSrBQzwa/at+pC0xRoe6uczJ9Ato+y1EDWP/PlrEMAQfvokBA6tQ==}
+
+  '@ng-icons/lucide@28.1.0':
+    resolution: {integrity: sha512-kNz0OwIQFJmEtJzGeKlYrtDmVCQdbdbwsLKGpNZZRLqgd5Qq31CszDhnJnBb1A7OZI+Wsd6PMh3iYyOFOSi1Gg==}
 
   '@ngtools/webpack@18.0.6':
     resolution: {integrity: sha512-chSRbPpnqTThURQqUvWAgEGkLcn5TQnUQPD1HBf4WcoO/OkaK4Q1Sa8FrEllkC6/Dlyj7myi8rskQz+V8K7GSg==}
@@ -10328,6 +10340,14 @@ snapshots:
     transitivePeerDependencies:
       - '@opentelemetry/api'
       - supports-color
+
+  '@ng-icons/core@25.6.1':
+    dependencies:
+      tslib: 2.6.3
+
+  '@ng-icons/lucide@28.1.0':
+    dependencies:
+      tslib: 2.6.3
 
   '@ngtools/webpack@18.0.6(@angular/compiler-cli@18.0.5(@angular/compiler@18.0.5(@angular/core@18.0.5(rxjs@7.8.1)(zone.js@0.14.7)))(typescript@5.4.5))(typescript@5.4.5)(webpack@5.91.0(@swc/core@1.5.29(@swc/helpers@0.5.11))(esbuild@0.21.3))':
     dependencies:
