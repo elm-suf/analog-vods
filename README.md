@@ -7,9 +7,9 @@ This application allows users to search for streamers and display their past VOD
 ## todo
 
 - [x] Set up the AnalogJs workspace
-- [ ] Deploy the application
-- [ ] Initialize basic layout (Spartan-ui)
-- [ ] Setup CI/CD
+- [x] Deploy the application 
+- [x] Initialize basic layout (Spartan-ui)
+- [x] Setup CI/CD
 - [ ] Integrate Twitch API for retrieving streamers and VODs
 - [ ] Develop search functionality for streamers
 - [ ] Display list of past VODs for selected streamers
